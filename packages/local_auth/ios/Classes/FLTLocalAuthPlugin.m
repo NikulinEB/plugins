@@ -116,6 +116,7 @@
                                   withFlutterResult:result];
                               return;
                             case LAErrorSystemCancel:
+                            case LAErrorNotInteractive:
                               if ([arguments[@"stickyAuth"] boolValue]) {
                                 self.lastCallArgs = arguments;
                                 self.lastResult = result;
